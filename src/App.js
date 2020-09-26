@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import Header2 from "./components/Header2";
 import Home from "./components/Home";
 import Checkout from "./components/Checkout";
 import Login from "./components/Login";
@@ -58,6 +59,7 @@ function App() {
 
           <Route path="/">
             <Header />
+            <Header2 />
             <Home />
           </Route>
         </Switch>

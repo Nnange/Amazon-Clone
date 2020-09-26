@@ -1,0 +1,46 @@
+.header2 {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(12, 29, 39, 0.897);
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.header2__optionLineOne {
+  font-size: 10px;
+}
+
+.header2__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header2__options {
+  flex-direction: column;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex: 0.2;
+}
+
+.header2__otherOptions {
+  flex: 0.8;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.header2__logo {
+  color: white;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.header2__otherOptions2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
