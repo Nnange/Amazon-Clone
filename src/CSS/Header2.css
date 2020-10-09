@@ -1,11 +1,11 @@
 .header2 {
   height: 50px;
   display: flex;
-  align-items: center;
   background-color: rgba(12, 29, 39, 0.897);
-  position: fixed;
-  z-index: 100;
-  width: 100%;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
 }
 
 .header2__optionLineOne {
@@ -20,14 +20,20 @@
 .header2__options {
   flex-direction: column;
   color: white;
-  margin-left: 10px;
   margin-right: 10px;
   display: flex;
-  flex: 0.2;
+}
+
+.header2__logoOptions {
+  display: flex;
+  flex-direction: row;
+}
+.header2__logoOptions:hover {
+  border: 2px solid whitesmoke;
 }
 
 .header2__otherOptions {
-  flex: 0.8;
+  flex: 1;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -37,10 +43,36 @@
 .header2__logo {
   color: white;
   font-size: 20px;
-  margin-left: 5px;
+  margin-left: 8px;
+  margin-top: 4px;
 }
 
 .header2__otherOptions2 {
   margin-left: 10px;
   margin-right: 10px;
+  height: 30px;
+  padding: 5px;
+}
+
+.header2__otherOptions2:hover {
+  border: 2px solid whitesmoke;
+}
+
+@media screen and (max-width: 700px) {
+  .header2 {
+    font-size: xx-small;
+    width: 100%;
+
+  }
+  .registry{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .header2{
+    width: 375px;
+    margin-left: 30px
+  }
+  
 }

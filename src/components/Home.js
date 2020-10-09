@@ -71,7 +71,56 @@ function Home() {
             image="https://m.media-amazon.com/images/I/81weGdVl1KL._AC_UL320_.jpg"
             rating={4}
           />
+          <Product
+            id="23445930"
+            title="Amazon Echo (3rd generation) | Smart speaker with alexa, Charcoal Fabric"
+            price={98.99}
+            image="https://m.media-amazon.com/images/I/71JB6hM6Z6L._AC_UY218_.jpg"
+            rating={5}
+          />
+          <Product
+            id="23445930"
+            title="Amazon Echo (3rd generation) | Smart speaker with alexa, Charcoal Fabric"
+            price={98.99}
+            image="https://m.media-amazon.com/images/I/71JB6hM6Z6L._AC_UY218_.jpg"
+            rating={5}
+          />
         </div>
+        <div className="home__row">
+          <Product
+            id="3254354345"
+            title="GoSports 6’ x 3’ Mid-Size Table Tennis Game Set | Indoor / Outdoor Portable Table Tennis Game with Net, 2 Table Tennis Paddles and 4 Balls, Red"
+            price={46.35}
+            image="https://m.media-amazon.com/images/I/81weGdVl1KL._AC_UL320_.jpg"
+            rating={4}
+          />
+        </div>
+        <div className="home__row">
+          <Product
+            id="3254354345"
+            title="GoSports 6’ x 3’ Mid-Size Table Tennis Game Set | Indoor / Outdoor Portable Table Tennis Game with Net, 2 Table Tennis Paddles and 4 Balls, Red"
+            price={46.35}
+            image="https://m.media-amazon.com/images/I/81weGdVl1KL._AC_UL320_.jpg"
+            rating={4}
+          />
+          <Product
+            id="3254354345"
+            title="PlayStation 4 Slim 1TB Limited Edition Console - Days of Play Bundle
+            4.8 out of 5 stars"
+            price={388.99}
+            image="https://m.media-amazon.com/images/I/41GGPRqTZtL._AC_UL320_.jpg"
+            rating={4}
+          />
+          <Product
+            id="3254354345"
+            title="PlayStation 4 Slim 1TB Limited Edition Console - Days of Play Bundle
+            4.8 out of 5 stars"
+            price={388.99}
+            image="https://m.media-amazon.com/images/I/41GGPRqTZtL._AC_UL320_.jpg"
+            rating={4}
+          />
+        </div>
+        
       </div>
     </div>
   );

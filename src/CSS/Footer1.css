@@ -1,0 +1,19 @@
+.footer1 {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(12, 29, 39, 0.897);
+  }
+
+  .footer1:hover {
+      background-color: rgba(12, 29, 39, 0.719);
+      cursor: pointer;
+  }
+
+  .footer1 > h3{
+      color: white;
+      display: flex;
+      text-align: center;
+      margin-left: 45%;
+      border-bottom: 1px solid #f0c14b;
+  }
