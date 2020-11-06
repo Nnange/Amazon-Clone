@@ -94,8 +94,8 @@ const Payment = () => {
           </div>
           <div className="payment__address">
             <p>{user?.email}</p>
-            <p>Immendal 21</p>
-            <p>47053 Duisburg, Germany</p>
+            <p>Duisburg, NRW</p>
+            <p>Germany</p>
           </div>
         </div>
 
