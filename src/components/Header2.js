@@ -1,9 +1,9 @@
 import React from "react";
 import "../CSS/Header2.css";
-import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import { useStateValue } from "../StateProvider";
 const Header2 = () => {
-  const [{ basket, user }, dispatch] = useStateValue();
+  const [] = useStateValue();
 
   return (
     <div className="header2">

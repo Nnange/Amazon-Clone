@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../CSS/Payment.css";
 import { useStateValue } from "../StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-import CurrencyFormat from "react-currency-format";
+import { NumericFormat } from "react-number-format";
 import { getBasketTotal } from "../reducer";
 import axios from "../axios";
 import { db } from "../firebase";
 
 const Payment = () => {
   const [{ basket, user }, dispatch] = useStateValue();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const stripe = useStripe();
   const elements = useElements();
@@ -70,7 +70,7 @@ const Payment = () => {
             type: 'EMPTY_ BASKET'
         })
 
-        history.replace("/orders");
+        navigate.replace("/orders");
       });
   };
 
@@ -128,7 +128,7 @@ const Payment = () => {
               <CardElement onChange={handleChange} />
 
               <div className="payment__priceContainer">
-                <CurrencyFormat
+                <NumericFormat
                   renderText={(value) => <h3>Order Total: {value}</h3>}
                   decimalScale={2}
                   value={getBasketTotal(basket)}

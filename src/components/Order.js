@@ -2,7 +2,7 @@ import React from "react";
 import "../CSS/Order.css";
 import moment from "moment";
 import CheckoutProduct from "./CheckoutProduct";
-import CurrencyFormat from "react-currency-format";
+import { NumericFormat } from "react-number-format";
 import { getBasketTotal } from "../reducer";
 import { useStateValue } from "../StateProvider";
 
@@ -26,7 +26,7 @@ const Order = ({ order }) => {
           hideButton
         />
       ))}
-      <CurrencyFormat
+      <NumericFormat
         renderText={(value) => (
           <h3 className="order__total"> Order total: {value}</h3>
         )}

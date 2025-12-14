@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../CSS/Login.css";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../firebase";
 
 const Login = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -14,7 +14,7 @@ const Login = () => {
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
-        history.push("/");
+        navigate.push("/");
       })
       .catch((error) => alert(error.message));
   };
@@ -26,7 +26,7 @@ const Login = () => {
       .then((auth) => {
         console.log(auth);
         if (auth) {
-          history.push("/");
+          navigate.push("/");
         }
       })
       .catch((error) => alert(error.message));
