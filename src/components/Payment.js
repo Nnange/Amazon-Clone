@@ -75,7 +75,6 @@ const Payment = () => {
   };
 
   const handleChange = (e) => {
-    /** */
     setDisabled(e.empty);
     setError(e.error ? e.error.message : "");
   };

@@ -1,6 +1,6 @@
 .footer1 {
     height: 40px;
-    display: flex;
+    display: none;
     align-items: center;
     background-color: rgba(12, 29, 39, 0.897);
   }

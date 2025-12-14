@@ -14,7 +14,7 @@ const Login = () => {
     auth
       .signInWithEmailAndPassword(email, password)
       .then((auth) => {
-        navigate.push("/");
+        navigate("/");
       })
       .catch((error) => alert(error.message));
   };
@@ -26,7 +26,7 @@ const Login = () => {
       .then((auth) => {
         console.log(auth);
         if (auth) {
-          navigate.push("/");
+          navigate("/");
         }
       })
       .catch((error) => alert(error.message));

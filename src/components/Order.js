@@ -1,13 +1,11 @@
-import React from "react";
 import "../CSS/Order.css";
 import moment from "moment";
 import CheckoutProduct from "./CheckoutProduct";
 import { NumericFormat } from "react-number-format";
-import { getBasketTotal } from "../reducer";
 import { useStateValue } from "../StateProvider";
 
 const Order = ({ order }) => {
-    const [{ basket, user }, dispatch] = useStateValue();
+    const [] = useStateValue();
 
   return (
     <div className="order">

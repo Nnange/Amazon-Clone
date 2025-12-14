@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 function Subtotal() {
   const navigate = useNavigate();
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
 
   return (
     <div className="subtotal">
@@ -28,11 +28,11 @@ function Subtotal() {
           </>
         )}
       />
-
-
-      <button onClick={(e) => navigate.push("/payment")}>
+      <button onClick={(e) => { navigate("/payment"); }}>
         proceed to checkout
       </button>
+
+
     </div>
   );
 }
